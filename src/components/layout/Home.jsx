@@ -11,9 +11,12 @@ export default props => {
 
     return (
         <div className="BuscaInicial">
-            <h1>Pesquisar CNPJ</h1>
+            <div className="title">
+                <h1>Pesquisar CNPJ</h1>
+            </div>
             <div className="inputs">
                 <input value={cnpj} onChange={newCnpj}/>
+                <button>Pesquisar</button>
             </div>
         </div>
     )

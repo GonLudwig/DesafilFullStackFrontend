@@ -1,16 +1,17 @@
-import react from 'react'
+import { BrowserRouter as Router } from 'react-router-dom'
+
 import Content from '../components/layout/Content'
 import Home from '../components/layout/Home'
-import Menu from '../components/layout/Menu'
 
 import './App.css'
 
-export default props => {
-    return (
-        <div className="App">
-            {/* <Menu/>
-            <Content/> */}
+const App = props => (
+    <div className="App">
+        <Router>
             <Home/>
-        </div>
-    )
-}
+            <Content/>
+        </Router>
+    </div>
+)
+
+export default App

@@ -1,4 +1,21 @@
 .inputs input {
-    width: 100%;
+    width: 200px;
     min-height: 25px;
+    margin-right: 10px;
+    font-size: 17px;
+}
+
+.inputs button {
+    -webkit-box-shadow: 5px 5px 8px 0px #ffffff; 
+    box-shadow: 5px 5px 8px 0px #ffffff;
+    background-color: #222;
+    color: #ffffff;
+}
+
+.BuscaInicial .title {
+    text-align: center;
+}
+
+.BuscaInicial {
+    margin: 10px;
 }
