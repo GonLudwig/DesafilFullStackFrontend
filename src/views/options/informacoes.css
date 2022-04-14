@@ -1,0 +1,9 @@
+.informacoes {
+    display: flex;
+    flex-direction: column;
+}
+
+.informacoes p {
+    margin: 5px 0px 0px 0px;
+    font-weight: bold;
+}

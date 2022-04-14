@@ -1,0 +1,9 @@
+.navegacao a{
+    margin: 0px 10px 0px 10px;
+    text-decoration: inherit;
+    color: white;
+    /* border-left: white solid 2px;
+    border-top: white solid 2px;
+    border-right: white solid 2px; */
+    border: white solid 2px;
+}
