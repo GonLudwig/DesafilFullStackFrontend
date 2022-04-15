@@ -2,19 +2,22 @@ import './atividadeEconomica.css'
 
 export default props => {
     const Cnpj = props.result
+    const tr = ' '
 
-    const tr = Cnpj.cnaes_secundarios.map((atividade, i) =>{
-        return (
-            <tr className={i % 2 ? 'impar' : 'par'}>
-                <td>
-                    {atividade.codigo}
-                </td>
-                <td>
-                    {atividade.descricao}
-                </td>
-            </tr>
-        )
-    })
+    if (Cnpj) {
+        tr = Cnpj.cnaes_secundarios.map((atividade, i) =>{
+            return (
+                <tr className={i % 2 ? 'impar' : 'par'}>
+                    <td>
+                        {atividade?.codigo}
+                    </td>
+                    <td>
+                        {atividade?.descricao}
+                    </td>
+                </tr>
+            )
+        })
+    }
 
     return(
         <div className="atividadeEconomica">

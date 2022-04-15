@@ -1,7 +1,8 @@
 import ReactDOM from 'react-dom'
 import App from './views/App'
-
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { QueryClientProvider } from 'react-query'
+import { queryClient } from './services/queryClient'
+import { BrowserRouter as Router } from 'react-router-dom'
 
 import './index.css'
 
@@ -9,6 +10,10 @@ import './index.css'
 const el = document.getElementById('root')
 
 ReactDOM.render(
-    <App/>,
-    el
+    <Router>
+        <QueryClientProvider client={queryClient}>
+            <App/>
+        </QueryClientProvider>
+    </Router>
+    ,el
 )

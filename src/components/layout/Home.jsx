@@ -16,7 +16,6 @@ export default props => {
     function hello(){
         console.log('Deu Certo!')
         setShowElement(true)
-        <
     }
 
     return (

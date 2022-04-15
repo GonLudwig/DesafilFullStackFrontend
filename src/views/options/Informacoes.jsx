@@ -7,15 +7,15 @@ export default props => {
         <div className="informacoes">
             <div className='empresarial'>
                 <p>Nome empresarial:</p>
-                {Cnpj.nome_fantasia}
+                {Cnpj?.nome_fantasia}
             </div>
             <div className='inscricao'>
                 <p>Numero da Inscricao:</p>
-                {Cnpj.cnpj}
+                {Cnpj?.cnpj}
             </div>
             <div className='dataAbertura'>
                 <p>Data da Abertura:</p>
-                {Cnpj.data_inicio_atividade}
+                {Cnpj?.data_inicio_atividade}
             </div>
             <div className='ultimaAtualizacao'>
                 <p>Ultima atualizacao:</p>
@@ -23,37 +23,37 @@ export default props => {
             <div className="segundaLinha"></div>
             <div className='logradouro'>
                 <p>Logradouro:</p>
-                {Cnpj.logradouro}
+                {Cnpj?.logradouro}
             </div>
             <div className='numero'>
                 <p>Numero:</p>
-                {Cnpj.numero}
+                {Cnpj?.numero}
             </div>
             <div className="terceiraLinha"></div>
             <div className='cep'>
                 <p>CEP:</p>
-                {Cnpj.cep}
+                {Cnpj?.cep}
             </div>
             <div className='bairro'>
                 <p>Bairro:</p>
-                {Cnpj.bairro}
+                {Cnpj?.bairro}
             </div>
             <div className='municipio'>
                 <p>Municipio:</p>
-                {Cnpj.municipio}
+                {Cnpj?.municipio}
             </div>
             <div className='uf'>
                 <p>UF:</p>
-                {Cnpj.uf}
+                {Cnpj?.uf}
             </div>
             <div className="quartLinha"></div>
             <div className='telefone'>
                 <p>Telefone</p>
-                {Cnpj.ddd_telefone_1}
+                {Cnpj?.ddd_telefone_1}
             </div>
             <div className='capitalSocial'>
                 <p>Capital Social</p>
-                {Cnpj.capital_social}
+                {Cnpj?.capital_social}
             </div>
         </div>
     )

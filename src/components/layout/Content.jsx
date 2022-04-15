@@ -4,18 +4,16 @@ import Informacoes from '../../views/options/Informacoes'
 import AtividadeEconomica from '../../views/options/AtividadeEconomica'
 import Socios from '../../views/options/Socios'
 
-import Cnpj from '../../data.js'
-
 import './content.css'
 
 export default props => {
-    const newCnpj = Cnpj[0]
+    const newCnpj = false
 
     return (
     <main className="content">
         <Switch>
             <Route path="/socios">
-                <Socios result={newCnpj}/>
+                <Socios result={newCnpj ? newCnpj : null}/>
             </Route>
             <Route path="/atividadeEconomica">
                 <AtividadeEconomica result={newCnpj}/>
