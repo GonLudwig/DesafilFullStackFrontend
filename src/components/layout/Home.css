@@ -1,17 +1,30 @@
-.inputs input {
-    margin: 10px;
-    font-size: 17px;
+.inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.inputs button {
-    -webkit-box-shadow: 5px 5px 8px 0px #ffffff; 
-    box-shadow: 5px 5px 8px 0px #ffffff;
+.inputs input {
+    margin: 10px;
+}
+
+.inputs a {
+    -webkit-box-shadow: 2px 2px 4px 0px #ffffff; 
+    box-shadow: 2px 2px 4px 0px #ffffff;
     background-color: #222;
     color: #ffffff;
+    text-decoration: inherit;
+    border: #222 solid 5px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.inputs a:hover {
+    color: white;
+    -webkit-box-shadow: 5px 5px 8px 0px #ffffff; 
+    box-shadow: 5px 5px 8px 0px #ffffff;
 }
 
 .BuscaInicial {
     margin: 10px;
-    display: flex;
-    flex-direction: column;
 }

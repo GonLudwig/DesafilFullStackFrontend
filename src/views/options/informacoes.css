@@ -1,6 +1,7 @@
 .informacoes {
     display: flex;
     flex-direction: column;
+    background-color: rgb(30, 50, 50);
 }
 
 .informacoes p {

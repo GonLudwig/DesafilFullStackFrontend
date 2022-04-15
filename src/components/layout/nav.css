@@ -1,9 +1,19 @@
+.navegacao {
+    display: flex;
+    justify-content: center;
+}
+
 .navegacao a{
-    margin: 0px 10px 0px 10px;
+    margin: 0px 1px 0px 1px;
     text-decoration: inherit;
     color: white;
-    /* border-left: white solid 2px;
-    border-top: white solid 2px;
-    border-right: white solid 2px; */
+}
+
+.navegacao a:hover {
+    color: white;
+}
+
+.navegacao div {
+    margin: 0px 1px 0px 1px;
     border: white solid 2px;
 }
