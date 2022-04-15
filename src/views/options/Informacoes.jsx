@@ -1,7 +1,11 @@
+import { formatCNPJ, formatCurrency, formatPhone, formatZipCode } from 'react-data-formatter'
 import './informacoes.css'
 
 export default props => {
     const Cnpj = props.result
+
+    const date = Cnpj?.data_inicio_atividade.split('-')
+    const newDate = `${date[2]}/${date[1]}/${date[0]}`
 
     return (
         <div className="informacoes">
@@ -11,11 +15,11 @@ export default props => {
             </div>
             <div className='inscricao'>
                 <p>Numero da Inscricao:</p>
-                {Cnpj?.cnpj}
+                {formatCNPJ(Cnpj?.cnpj)}
             </div>
             <div className='dataAbertura'>
                 <p>Data da Abertura:</p>
-                {Cnpj?.data_inicio_atividade}
+                {newDate}
             </div>
             <div className='ultimaAtualizacao'>
                 <p>Ultima atualizacao:</p>
@@ -32,7 +36,7 @@ export default props => {
             <div className="terceiraLinha"></div>
             <div className='cep'>
                 <p>CEP:</p>
-                {Cnpj?.cep}
+                {formatZipCode(Cnpj?.cep)}
             </div>
             <div className='bairro'>
                 <p>Bairro:</p>
@@ -49,11 +53,11 @@ export default props => {
             <div className="quartLinha"></div>
             <div className='telefone'>
                 <p>Telefone</p>
-                {Cnpj?.ddd_telefone_1}
+                {formatPhone(Cnpj?.ddd_telefone_1)}
             </div>
             <div className='capitalSocial'>
                 <p>Capital Social</p>
-                {Cnpj?.capital_social}
+                {formatCurrency(Cnpj?.capital_social)}
             </div>
         </div>
     )

@@ -2,6 +2,8 @@ import { useState } from "react"
 import { Link } from "react-router-dom"
 import Content from "./Content"
 import Nav from "./Nav"
+import { useCnpj } from "../../views/pages/useCnpj"
+import data from "../../data"
 
 import './Home.css'
 
@@ -32,7 +34,7 @@ export default props => {
                 </div>
             </div>
             { showElement ? <Nav/> : null }
-            { showElement ? <Content/>: null }
+            { showElement ? <Content cnpj={data}/>: null }
         </div>
     )
 }

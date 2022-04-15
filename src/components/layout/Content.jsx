@@ -7,7 +7,7 @@ import Socios from '../../views/options/Socios'
 import './content.css'
 
 export default props => {
-    const newCnpj = false
+    const newCnpj = props.cnpj[0]
 
     return (
     <main className="content">

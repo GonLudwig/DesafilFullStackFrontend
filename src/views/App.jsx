@@ -6,9 +6,7 @@ import './App.css'
 
 const App = props => (
     <div className="App">
-        <Router>
-            <Home/>
-        </Router>
+        <Home/>
     </div>
 )
 
