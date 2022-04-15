@@ -1,10 +1,11 @@
+import './atividadeEconomica.css'
 
 export default props => {
     const Cnpj = props.result
 
     const tr = Cnpj.cnaes_secundarios.map((atividade, i) =>{
         return (
-            <tr key={i}>
+            <tr className={i % 2 ? 'impar' : 'par'}>
                 <td>
                     {atividade.codigo}
                 </td>

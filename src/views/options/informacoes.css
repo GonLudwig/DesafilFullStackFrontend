@@ -1,7 +1,76 @@
 .informacoes {
     display: flex;
-    flex-direction: column;
-    background-color: rgb(30, 50, 50);
+    flex-flow: row wrap;
+    /* background-color: rgb(30, 50, 50); */
+    min-width: 100%;
+    max-height: 500px;
+    text-align: left;
+    border: rgb(230, 230, 230) solid;
+    border-radius: 10px;
+}
+
+.informacoes div {
+    padding-left: 10px;
+}
+
+.informacoes .empresarial {
+    width: 50%;
+}
+
+.informacoes .inscricao {
+    width: 50%;
+}
+
+.informacoes .dataAbertura {
+    width: 30%;
+}
+
+.informacoes .ultimaAtualizacao {
+    width: 30%;
+}
+
+.informacoes .segundaLinha {
+    width: 30%;
+}
+
+.informacoes .logradouro {
+    width: 30%;
+}
+
+.informacoes .numero {
+    width: 30%;
+}
+
+.informacoes .terceiraLinha {
+    width: 30%;
+}
+
+.informacoes .cep {
+    width: 12%;
+}
+
+.informacoes .bairro {
+    width: 12%;
+}
+
+.informacoes .municipio {
+    width: 12%;
+}
+
+.informacoes .uf {
+    width: 12%;
+}
+
+.informacoes .quartLinha {
+    width: 50%;
+}
+
+.informacoes .telefone {
+    width: 100%;
+}
+
+.informacoes .capitalSocial {
+    width: 100%;
 }
 
 .informacoes p {

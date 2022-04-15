@@ -1,0 +1,34 @@
+.socios {
+    min-width: 100%;
+    max-height: 500px;
+    border: rgb(230, 230, 230) solid;
+    border-radius: 10px;
+}
+
+.socios table {
+    width: 95%;
+    margin: 30px;
+    text-align: left;
+}
+
+.socios table {
+    border: rgb(230, 230, 230) solid;
+}
+
+.socios table td {
+    border-right: rgb(230, 230, 230) solid;
+    padding: 3px 30px 3px 7px;
+    width: 50%;
+}
+
+.socios table thead {
+    background-color: rgba(208, 208, 208, 0.598);
+}
+
+.socios table thead td {
+    padding-bottom: 0px;
+}
+
+.socios table .par {
+    background-color: rgba(230, 230, 230, 0.168);
+}

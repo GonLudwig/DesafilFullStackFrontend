@@ -1,19 +1,26 @@
 .navegacao {
     display: flex;
-    justify-content: center;
+    margin-left: 130px;
 }
 
 .navegacao a{
-    margin: 0px 1px 0px 1px;
+    margin: 0px 6px 0px 6px;
     text-decoration: inherit;
     color: white;
 }
 
 .navegacao a:hover {
-    color: white;
+    color: rgb(210, 210, 210);
 }
 
 .navegacao div {
-    margin: 0px 1px 0px 1px;
-    border: white solid 2px;
+    margin: 0px;
+    border: rgb(230, 230, 230) solid 2px;
+    border-bottom: 0px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.navegacao div:hover {
+    margin: 0px;
+    border: rgb(210, 210, 210) solid 2px;
 }

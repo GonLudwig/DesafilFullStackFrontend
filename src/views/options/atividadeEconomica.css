@@ -1,0 +1,33 @@
+.atividadeEconomica {
+    min-width: 100%;
+    max-height: 500px;
+    border: rgb(230, 230, 230) solid;
+    border-radius: 10px;
+}
+
+.atividadeEconomica table {
+    width: 95%;
+    margin: 30px;
+    text-align: left;
+}
+
+.atividadeEconomica table {
+    border: rgb(230, 230, 230) solid;
+}
+
+.atividadeEconomica table td {
+    border-right: rgb(230, 230, 230) solid;
+    padding: 3px 30px 3px 7px;
+}
+
+.atividadeEconomica table thead {
+    background-color: rgba(208, 208, 208, 0.598);
+}
+
+.atividadeEconomica table thead td {
+    padding-bottom: 0px;
+}
+
+.atividadeEconomica table .par {
+    background-color: rgba(230, 230, 230, 0.168);
+}

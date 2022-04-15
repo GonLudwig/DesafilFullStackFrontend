@@ -1,10 +1,8 @@
 import React from 'react'
 import { Switch, Route} from 'react-router-dom'
-import Nav from './Nav'
 import Informacoes from '../../views/options/Informacoes'
 import AtividadeEconomica from '../../views/options/AtividadeEconomica'
 import Socios from '../../views/options/Socios'
-import Home from './Home'
 
 import Cnpj from '../../data.js'
 
@@ -15,7 +13,6 @@ export default props => {
 
     return (
     <main className="content">
-        <Nav/>
         <Switch>
             <Route path="/socios">
                 <Socios result={newCnpj}/>
@@ -25,9 +22,6 @@ export default props => {
             </Route>
             <Route path="/informacoes">
                 <Informacoes result={newCnpj}/>
-            </Route>
-            <Route path="/">
-                <Home/>
             </Route>
         </Switch>
     </main>
