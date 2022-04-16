@@ -4,8 +4,12 @@ import './informacoes.css'
 export default props => {
     const Cnpj = props.result
 
-    const date = Cnpj?.data_inicio_atividade?.split('-')
-    const newDate = `${date[2]}/${date[1]}/${date[0]}`
+
+    function formatData(data) {
+        const date = data?.split('-')
+
+        return `${date[2]}/${date[1]}/${date[0]}`
+    }
     return (
         <div className="informacoes">
             <div className='empresarial'>
@@ -18,10 +22,11 @@ export default props => {
             </div>
             <div className='dataAbertura'>
                 <p>Data da Abertura:</p>
-                {newDate}
+                {formatData(Cnpj?.data_inicio_atividade)}
             </div>
             <div className='ultimaAtualizacao'>
                 <p>Ultima atualizacao:</p>
+                {formatData(Cnpj?.data_ultima_atualizacao)}
             </div>
             <div className="segundaLinha"></div>
             <div className='logradouro'>
