@@ -1,13 +1,13 @@
 .socios {
-    min-width: 100%;
-    max-height: 500px;
     border: rgb(230, 230, 230) solid;
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
 }
 
 .socios table {
     width: 95%;
-    margin: 30px;
+    margin: 20px;
     text-align: left;
 }
 

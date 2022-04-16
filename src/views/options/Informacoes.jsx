@@ -1,12 +1,11 @@
-import { formatCNPJ, formatCurrency, formatPhone, formatZipCode } from 'react-data-formatter'
+import { formatCNPJ, formatPhone, formatZipCode } from 'react-data-formatter'
 import './informacoes.css'
 
 export default props => {
     const Cnpj = props.result
 
-    const date = Cnpj?.data_inicio_atividade.split('-')
+    const date = Cnpj?.data_inicio_atividade?.split('-')
     const newDate = `${date[2]}/${date[1]}/${date[0]}`
-
     return (
         <div className="informacoes">
             <div className='empresarial'>
@@ -57,7 +56,7 @@ export default props => {
             </div>
             <div className='capitalSocial'>
                 <p>Capital Social</p>
-                {formatCurrency(Cnpj?.capital_social)}
+                {Cnpj?.capital_social?.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}
             </div>
         </div>
     )

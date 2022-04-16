@@ -3,9 +3,9 @@ import './socios.css'
 export default props => {
     const Cnpj = props.result
 
-    const tr = Cnpj.qsa.map((socios, i) =>{
+    const tr = Cnpj?.qsa?.map((socios, i) =>{
         return (
-            <tr className={i % 2 ? 'impar' : 'par'}>
+            <tr key={i} className={i % 2 ? 'impar' : 'par'}>
                 <td>
                     {socios.nome_socio}
                 </td>

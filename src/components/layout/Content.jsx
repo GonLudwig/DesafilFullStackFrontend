@@ -7,13 +7,13 @@ import Socios from '../../views/options/Socios'
 import './content.css'
 
 export default props => {
-    const newCnpj = props.cnpj[0]
+    const newCnpj = props.cnpj
 
     return (
     <main className="content">
         <Switch>
             <Route path="/socios">
-                <Socios result={newCnpj ? newCnpj : null}/>
+                <Socios result={newCnpj}/>
             </Route>
             <Route path="/atividadeEconomica">
                 <AtividadeEconomica result={newCnpj}/>
